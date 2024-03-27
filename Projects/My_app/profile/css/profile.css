@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+#page_cover{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DBE6F6;  
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  
+    background: linear-gradient(to right, #C5796D, #DBE6F6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+
+}
+#profile_box{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#profile_pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+    position: relative;
+    overflow: hidden;
+}
+#profile_icon{
+    font-size: 120px;
+    color: #ccc;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#profile_upload{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0;
+}
+#upp{
+    font-size: 23px; 
+    color: grey; 
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+#next{
+    display: none;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #DBE6F6;  
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  
+    background: linear-gradient(to right, #C5796D, #DBE6F6); 
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* */
+body{
+    background: #DBE6F6;  
+    background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  
+    background: linear-gradient(to right, #C5796D, #DBE6F6); 
+}
+#profile_header{
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/cover.webp");
+    background-size: cover;
+    background-position: bottom;
+}
+#profile_picture{
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ccc;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translate(-50%);
+}
+#profile_username{
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+#app{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+@media(max-width:576px){
+    #app{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+#contact,#player,#logout{
+    width: 180px;
+    height: 150px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact:hover,#player:hover,#logout:hover{
+    width: 200px;
+    height: 170px;
+    box-shadow: 0px 0px 10px #ccc;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#contact i,#player i,#logout i{
+    font-size: 45px;
+    color: purple;
+}
+#contact p,#player p,#logout p{
+    font-size: 25px;
+    color: purple;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 5px;
+}
+#profile_footer{
+    width: 100%;
+    height: 70px;
+    background-color: purple;display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#profile_footer p{
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: bold;
+}
+#app a{
+    text-decoration: none;
+}
